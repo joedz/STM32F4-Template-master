@@ -1,0 +1,15 @@
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+User\main.c(42): warning:  #111-D: statement is unreachable
+    CO_USART3_Init();
+User\main.c(53): warning:  #223-D: function "printf" declared implicitly
+  	printf("\r\nNum2=%d", 222);
+User\main.c(56): warning:  #223-D: function "sprintf" declared implicitly
+  	sprintf(String, "\r\nNum3=%d", 333);
+User\main.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=1472 RO-data=424 RW-data=20 ZI-data=1748  
+FromELF: creating hex file...
+".\Objects\Project.axf" - 0 Error(s), 3 Warning(s).
+Build Time Elapsed:  00:00:01

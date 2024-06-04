@@ -1,0 +1,105 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.24.2.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 2587233, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.24.1
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.24.1
+Dialog DLL:      DCM.DLL V1.16.0.0
+Target DLL:      UL2CM3.DLL V1.160.3.0
+Dialog DLL:      TCM.DLL V1.32.0.0
+ 
+<h2>Project:</h2>
+c:\Users\joedz\Documents\stm\STM32MyProject\STM32F4-Template-master\USER\template.uvprojx
+Project File Date:  06/05/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling Serial.c...
+compiling OLED.c...
+..\Hardware\OLED.c(11): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+      RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\Hardware\OLED.c(13): error:  #268: declaration may not appear after executable statement in block
+  	GPIO_InitTypeDef GPIO_InitStructure;
+..\Hardware\OLED.c(14): error:  #20: identifier "GPIO_Mode_Out_OD" is undefined
+   	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_OD;
+..\Hardware\OLED.c: 0 warnings, 3 errors
+compiling AW3644.c...
+..\Hardware\AW3644.c(13): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+      RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\Hardware\AW3644.c(18): error:  #20: identifier "GPIO_Mode_AF_OD" is undefined
+      GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;
+..\Hardware\AW3644.c: 0 warnings, 2 errors
+compiling Key.c...
+..\Hardware\Key.c(6): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\Hardware\Key.c(8): error:  #268: declaration may not appear after executable statement in block
+  	GPIO_InitTypeDef GPIO_InitStructure;
+..\Hardware\Key.c(9): error:  #20: identifier "GPIO_Mode_IPU" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+..\Hardware\Key.c: 0 warnings, 3 errors
+compiling LED.c...
+..\Hardware\LED.c(5): error:  #20: identifier "RCC_APB2Periph_GPIOA" is undefined
+  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+..\Hardware\LED.c(7): error:  #268: declaration may not appear after executable statement in block
+  	GPIO_InitTypeDef GPIO_InitStructure;
+..\Hardware\LED.c(8): error:  #20: identifier "GPIO_Mode_Out_PP" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;
+..\Hardware\LED.c: 0 warnings, 3 errors
+compiling co_usart.c...
+..\Hardware\co_usart.c(11): error:  #20: identifier "RCC_APB2Periph_GPIOA" is undefined
+  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);
+..\Hardware\co_usart.c(13): error:  #268: declaration may not appear after executable statement in block
+  	GPIO_InitTypeDef GPIO_InitStructure;
+..\Hardware\co_usart.c(14): error:  #20: identifier "GPIO_Mode_AF_PP" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;
+..\Hardware\co_usart.c(19): error:  #20: identifier "GPIO_Mode_IPU" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+..\Hardware\co_usart.c(24): error:  #268: declaration may not appear after executable statement in block
+  	USART_InitTypeDef USART_InitStructure;
+..\Hardware\co_usart.c(37): error:  #268: declaration may not appear after executable statement in block
+  	NVIC_InitTypeDef NVIC_InitStructure;
+..\Hardware\co_usart.c: 0 warnings, 6 errors
+compiling MPU6050.c...
+..\Hardware\MPU6050.c(70): error:  #20: identifier "RCC_APB2Periph_GPIOB" is undefined
+  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);
+..\Hardware\MPU6050.c(72): error:  #268: declaration may not appear after executable statement in block
+  	GPIO_InitTypeDef GPIO_InitStructure;
+..\Hardware\MPU6050.c(73): error:  #20: identifier "GPIO_Mode_AF_OD" is undefined
+  	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_OD;
+..\Hardware\MPU6050.c(78): error:  #268: declaration may not appear after executable statement in block
+  	I2C_InitTypeDef I2C_InitStructure;
+..\Hardware\MPU6050.c: 0 warnings, 4 errors
+compiling co_adc.c...
+compiling co_i2c.c...
+".\Objects\template.axf" - 21 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil.STM32F4xx_DFP.2.17.1
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>
